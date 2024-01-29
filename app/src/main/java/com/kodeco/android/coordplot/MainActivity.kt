@@ -62,7 +62,6 @@ fun PlotSurface() {
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-//            Text(text = "Testing")
 
             Map(xPercent = xPercent, yPercent = yPercent)
 
@@ -127,12 +126,6 @@ fun Map(xPercent: Float, yPercent: Float, modifier: Modifier = Modifier) {
 
         )
     }
-    
-//    Text(text = "$xOffset")
-//    Text(text = "$yOffset")
-
-
-
 
 }
 
