@@ -3,13 +3,17 @@ package com.kodeco.android.coordplot
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+<<<<<<< Updated upstream
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+=======
+>>>>>>> Stashed changes
 import com.kodeco.android.coordplot.ui.theme.MyApplicationTheme
+import com.kodeco.android.coordplot.views.PlotSurface
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,11 +21,19 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyApplicationTheme {
                 PlotSurface()
+//                Image(
+//                    modifier = Modifier.size(36.dp)
+////                        .offset(xOffset.dp, yOffset.dp)
+//                    ,
+//                    painter = painterResource(id = R.drawable.game_assets_18_11),
+//                    contentDescription = stringResource(R.string.plot_point)
+//                )
             }
         }
     }
 }
 
+<<<<<<< Updated upstream
 @Composable
 fun PlotSurface() {
     Surface(
@@ -59,3 +71,7 @@ fun MapPreview() {
         Map(xPercent = 0.5f, yPercent = 0.5f)
     }
 }
+=======
+
+
+>>>>>>> Stashed changes

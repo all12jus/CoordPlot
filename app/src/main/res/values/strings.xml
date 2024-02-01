@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Coord Plot</string>
+    <string name="plot_point">Plot Point</string>
 </resources>
