@@ -30,22 +30,13 @@ fun Map(xPercent: Float, yPercent: Float, modifier: Modifier = Modifier) {
                 .size(300.dp)
                 .background(Color.Green.copy(alpha = 0.25f))
         )
-        
-//        Image(imageVector = image, contentDescription = )
+
         Image(
             modifier = Modifier.size(36.dp).offset(xOffset.dp, yOffset.dp),
             painter = painterResource(id = R.drawable.game_assets_18_11),
             contentDescription = stringResource(R.string.plot_point)
         )
 
-//        Box (
-//            modifier = modifier
-//                .offset(xOffset.dp, yOffset.dp)
-//                .clip(CircleShape)
-//                .size(36.dp)
-//                .background(Color.Green)
-//
-//        )
     }
 
 }
