@@ -2,6 +2,7 @@ package com.kodeco.android.coordplot.views
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Slider
 import androidx.compose.material3.SliderColors
 import androidx.compose.material3.SliderDefaults
@@ -18,9 +19,9 @@ import com.kodeco.android.coordplot.ui.theme.MyApplicationTheme
 fun MapSlider(label: String, isLandscape: Boolean, value: Float, setValue: (Float) -> Unit, colors: SliderColors) {
     Row (
         verticalAlignment = Alignment.CenterVertically,
-        modifier = Modifier.padding(8.dp)
+        modifier = Modifier.padding(16.dp)
     ) {
-        Text(text = label)
+        Text(text = label, modifier = Modifier.width(120.dp).padding(start = 8.dp))
         Slider(value = value, onValueChange = { setValue(it) }, valueRange = 0f..1f,  colors = colors,)
     }
 
