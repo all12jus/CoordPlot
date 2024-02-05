@@ -60,8 +60,6 @@ fun PlotSurface() {
                     .padding(8.dp),
                 horizontalArrangement = Arrangement.SpaceEvenly,
                 verticalAlignment = Alignment.CenterVertically
-//                verticalArrangement = Arrangement.Center,
-//                horizontalAlignment = Alignment.CenterHorizontally
             ) {
 
 
@@ -78,7 +76,7 @@ fun PlotSurface() {
 
 
                     MapSlider(
-                        label = "X",
+                        label = "X Axis:",
                         isLandscape = isLandscape,
                         value = xPercent,
                         setValue = { xPercent = it},
@@ -86,31 +84,13 @@ fun PlotSurface() {
                     )
 
                     MapSlider(
-                        label = "Y",
+                        label = "Y Axis:",
                         isLandscape = isLandscape,
                         value = yPercent,
                         setValue = { yPercent = it},
                         colors = customSliderColors
                     )
-
-//                    Row (
-//                        verticalAlignment = Alignment.CenterVertically,
-//                        modifier = Modifier.padding(8.dp)
-//                    ) {
-//                        Text(text = "X")
-//                        Slider(value = xPercent, onValueChange = { xPercent = it }, valueRange = 0f..1f,  colors = customSliderColors,)
-//                    }
-//
-//                    Row (
-//                        verticalAlignment = Alignment.CenterVertically,
-//                        modifier = Modifier.padding(8.dp)
-//                    ) {
-//                        Text(text = "Y")
-//                        Slider(value = yPercent, onValueChange = { yPercent = it }, valueRange = 0f..1f,  colors = customSliderColors,)
-//                    }
-
                 }
-
 
             }
 
@@ -127,7 +107,7 @@ fun PlotSurface() {
                 Map(xPercent = xPercent, yPercent = yPercent)
 
                 MapSlider(
-                    label = "X",
+                    label = "X Axis:",
                     isLandscape = isLandscape,
                     value = xPercent,
                     setValue = { xPercent = it},
@@ -135,28 +115,13 @@ fun PlotSurface() {
                 )
 
                 MapSlider(
-                    label = "Y",
+                    label = "Y Axis:",
                     isLandscape = isLandscape,
                     value = yPercent,
                     setValue = { yPercent = it},
                     colors = customSliderColors
                 )
 
-//                Row (
-//                    verticalAlignment = Alignment.CenterVertically,
-//                    modifier = Modifier.padding(8.dp)
-//                ) {
-//                    Text(text = "X")
-//                    Slider(value = xPercent, onValueChange = { xPercent = it }, valueRange = 0f..1f,  colors = customSliderColors,)
-//                }
-//
-//                Row (
-//                    verticalAlignment = Alignment.CenterVertically,
-//                    modifier = Modifier.padding(8.dp)
-//                ) {
-//                    Text(text = "Y")
-//                    Slider(value = yPercent, onValueChange = { yPercent = it }, valueRange = 0f..1f,  colors = customSliderColors,)
-//                }
 
             }
         }
